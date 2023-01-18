@@ -1,11 +1,17 @@
+import { Link } from "react-router-dom";
+import "./NavBar.css";
+
+
 function NavBar() {
     return (
         <>
             <header>
                 <nav class="navbar navbar-expand-lg bg-secondary">
                     <div class="container-fluid">
-                        <h1 class="titulo">Nomades</h1>
-                        <a class="navbar-brand" href="#">Home</a>
+                        <h1 class="titulo">Photo Galery</h1>
+                        <Link to={'/'}>
+                            <a class="navbar-brand" href="#">Home</a>
+                        </Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -17,22 +23,13 @@ function NavBar() {
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Mujer</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Otras
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                        <li><a class="dropdown-item" href="#">Joyeria</a></li>
-                                        <li><a class="dropdown-item" href="#">Belleza</a></li>
-                                    </ul>
-                                </li>
+                                
                             </ul>
                         </div>
                         <div>
                             <i class="bi bi-cart"></i>
                         </div>
-                    </div>
+                    </div>cle
                 </nav>
             </header>
         </>
