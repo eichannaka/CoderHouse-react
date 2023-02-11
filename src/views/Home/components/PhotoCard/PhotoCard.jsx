@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function PhotoCard({ photo }) {
     return (
         <Container >
-            <p> {photo.photographer} </p>
+            <p> {photo.name} </p>
             <img src={photo.src.small} alt={photo.alt} />
         </Container>
     )

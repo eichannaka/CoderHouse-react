@@ -1,36 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import "./NavBar.css";
-
+import logo from "../../assets/css/imagenes/check.png";
+import Cart from "../Cart/Cart";
 
 function NavBar() {
     return (
         <>
             <header>
-                <nav class="navbar navbar-expand-lg bg-secondary">
-                    <div class="container-fluid">
-                        <h1 class="titulo">Photo Galery</h1>
-                        <Link to={'/'}>
-                            <a class="navbar-brand" href="#">Home</a>
-                        </Link>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Hombre</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Mujer</a>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                        <div>
-                            <i class="bi bi-cart"></i>
-                        </div>
-                    </div>cle
-                </nav>
+                <div className="logo">
+                <img src={logo} alt="Logo" width="40px"/>
+                </div>
+                <div className="navBar">
+                    <Link to={'/'}>
+                        <a class="navbar-brand" href="#">Inicio</a>
+                    </Link>
+                    <Link to={'/Hombre'}>
+                        <a class="navbar-brand" href="#">Hombre</a>
+                    </Link>
+                    <Link to={'/Mujer'}>
+                        <a class="navbar-brand" href="#">Mujer</a>
+                    </Link>
+                    <Link to={'/Otros'}>
+                        <a class="navbar-brand" href="#">Otros</a>
+                    </Link>
+                    <Cart></Cart>
+                </div>
             </header>
         </>
     );

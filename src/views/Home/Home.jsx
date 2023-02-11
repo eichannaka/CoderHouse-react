@@ -7,45 +7,40 @@ import Loader from './components/Loader/Loader'
 
 //Services
 import { getPhotos } from '../../services/getPhotos'
+import { getCategories } from '../../services/getCategories'
+import { getProduct } from '../../services/getProduct'
+import { Cart } from '../../components/Cart/Cart'
+
 import PhotoCard from './components/PhotoCard/PhotoCard'
 import { Link } from 'react-router-dom'
+import Catergories from '../../components/Categories/Categories'
+import { Card } from '@nextui-org/react'
+import ProductCard from '../../components/Categories/components/Pruduct/ProductCard'
 
 export default function Home() {
-	const [photosState, setPhotosState] = useState([])
 
-	useEffect(() => {
-		const response = getPhotos()
 
-		response.then(res => {
-			setPhotosState(res.data)
-		})
-			.catch(err => {
-				console.log(err);
-			})
-
-	}, [])
-
-	if (photosState.length === 0) return <Loader />
+	// Condicionales para mostrar componentes
 
 	return (
-		<PhotosContainer >
-			{
-				photosState.photos.map((photo, index) => (
-					<Link to={`/photo/${photo.id}`}  key={index} >
-						<PhotoCard photo={photo}/>
-					</Link>
-				))
-			}
-		</PhotosContainer>
+		<>
+
+			<PhotosContainer >
+				<ProductCard></ProductCard> 
+			</PhotosContainer>
+		</>
 	)
+
+
+
 }
 
+
 const PhotosContainer = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	margin: 40px;
+display: flex;
+flex-direction:row ;
+justify-content: center;
+align-items: center;
+background-color: red;
+border-radius: solid 5px black;
 `
