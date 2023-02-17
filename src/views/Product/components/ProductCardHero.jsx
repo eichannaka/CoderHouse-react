@@ -8,4 +8,8 @@ export default function ProductCardHero() {
 }
 const Root = styled.div`
     background-color: green;
+    color: black;
+    padding: 5px;
+    border-radius: 10%;
+    border: solid 2px black;
 `

@@ -9,9 +9,9 @@ import Otros from './components/Categories/components/pages/Otros';
 import Product from './views/Product/Product';
 import styled from 'styled-components';
 
-export const AppContext = createContext(null) 
+export const AppContext = createContext(null)
 function App() {
-  const [cart, setCart] = useState({empty: true, items: []})
+  const [cart, setCart] = useState({ empty: true, items: [] })
 
   const value = { cart, setCart }
   console.log("🚀 ~ file: App.js:17 ~ App ~ cart", cart)

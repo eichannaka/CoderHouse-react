@@ -26,23 +26,9 @@ export default function Home() {
 
 	return (
 		<>
-
-			<PhotosContainer >
-				<ProductCard></ProductCard> 
-			</PhotosContainer>
+				<ProductCard></ProductCard>
 		</>
 	)
-
-
-
 }
 
 
-const PhotosContainer = styled.div`
-display: flex;
-flex-direction:row ;
-justify-content: center;
-align-items: center;
-background-color: red;
-border-radius: solid 5px black;
-`

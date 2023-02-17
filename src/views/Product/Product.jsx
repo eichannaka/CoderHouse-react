@@ -13,11 +13,9 @@ export default function Product() {
             <Grid.Container gap={2} justify="center">
                 <Grid xs={12} sm={6}>
                     <ProductCardHero />
-
                 </Grid>
                 <Grid xs={12} sm={6}>
                     <ProductCardHeroDescrip id={id}/>
-
                 </Grid>
             </Grid.Container>
 
@@ -26,7 +24,7 @@ export default function Product() {
 }
 
 const Root = styled.div`
-    background-color: red;
+    background-color: #bb8484;
     width: 100%;
     height: 100%;
 `
