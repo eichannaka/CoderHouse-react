@@ -6,8 +6,6 @@ import './styles/index.css'
 import Loader from './components/Loader/Loader'
 
 //Services
-import { getPhotos } from '../../services/getPhotos'
-import { getCategories } from '../../services/getCategories'
 import { getProduct } from '../../services/getProduct'
 import { Cart } from '../../components/Cart/Cart'
 

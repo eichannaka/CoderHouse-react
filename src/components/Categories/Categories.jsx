@@ -30,9 +30,12 @@ export default function Categories() {
             {(
                 category.map((category, index) => {
                     return (
-                        <div key={index}>
-                            <h2>{category}</h2>
-                        </div>
+                        <Card>
+                            <div key={index}>
+                                <h2>{category}</h2>
+
+                            </div>
+                        </Card>
                     )
                 }
                 ))}
@@ -41,6 +44,21 @@ export default function Categories() {
 }
 
 const CategoryList = styled.div`
-
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
     
+`
+
+const Card = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #616183;
+margin: 15px;
+width: 50%;
+height: 200px;
+border: solid 5px black;
 `

@@ -21,7 +21,7 @@ function NavBar() {
                         <a class="navbar-brand" href="#">Mujer</a>
                     </Link>
                     <Link to={'/Otros'}>
-                        <a class="navbar-brand" href="#">Otros</a>
+                        <a class="navbar-brand" href="#">Categorias</a>
                     </Link>
                     <Cart></Cart>
                 </div>
