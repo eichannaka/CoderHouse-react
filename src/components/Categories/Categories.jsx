@@ -33,7 +33,6 @@ export default function Categories() {
                         <Card>
                             <div key={index}>
                                 <h2>{category}</h2>
-
                             </div>
                         </Card>
                     )
@@ -47,6 +46,7 @@ const CategoryList = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
+flex-wrap: wrap;
 align-items: center;
     
 `
@@ -56,6 +56,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+text-align: center;
 background-color: #616183;
 margin: 15px;
 width: 50%;

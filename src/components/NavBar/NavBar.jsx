@@ -23,7 +23,7 @@ function NavBar() {
                     <Link to={'/Otros'}>
                         <a class="navbar-brand" href="#">Categorias</a>
                     </Link>
-                    <Cart></Cart>
+                    <span>🛒</span>
                 </div>
             </header>
         </>
